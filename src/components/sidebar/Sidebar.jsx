@@ -3,7 +3,7 @@ import Trends from './Trends'
 
 export default function Sidebar() {
   return (
-    <div className=' min-w-[22rem] max-w-[22rem] '>
+    <div className='w-[90vw] sm:min-w-[22rem] max-w-[22rem] '>
         <div className='bg-blue-700 w-full text-white flex flex-col items-center text-center p-7 rounded-lg'>
             <h2 className='text-2xl font-bold'>Get Started with KoinX for FREE</h2>
             <p className='text-xs mt-3'>

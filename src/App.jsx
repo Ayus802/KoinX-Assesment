@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar/>
-    <div className="flex flex-col justify-center items-center ">
+    <div className="flex flex-col justify-center items-center max-w-screen">
         <Main/>
         <Page5/>
     </div>

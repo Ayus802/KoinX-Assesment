@@ -9,7 +9,7 @@ import Page5 from "./Page5"
 
 export default function Main() {
   return (
-    <div className='flex flex-wrap gap-2 mt-16 px-3 md:px-10'>
+    <div className='flex flex-wrap justify-center gap-2 mt-16 px-3 md:px-10'>
         <div className="w-[90vw] md:w-[45rem]">
             <div className="h-screen overflow-hidden">
               <Chart/>
