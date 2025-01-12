@@ -42,7 +42,7 @@ export default function Page5() {
         <div className='flex items-center gap-3 mb-5 w-[85vw]'>
             <div 
                 onClick={leftScroll1}
-                className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl  bg-white left-4 sm:left-16'> {'<'} </div>
+                className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl absolute bg-white left-4 sm:left-16 cursor-pointer'> {'<'} </div>
             <div className='flex gap-6 overflow-hidden' ref={likeRef} >
                 {trending.map((response,index) => 
                     <TrendCard 
@@ -56,14 +56,14 @@ export default function Page5() {
             </div>
             <div
                 onClick={rightScroll1} 
-                className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl  right-4 sm:right-16 bg-white'> {'>'} </div>
+                className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl absolute right-4 sm:right-16 bg-white cursor-pointer'> {'>'} </div>
             
         </div>
         <h2 className='my-5 text-xl font-semibold'>Trending Coins</h2>
         <div className='flex items-center gap-3 mb-5 w-[85vw]'>
             <div 
                 onClick={leftScroll2}
-                className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl  left-4 sm:left-16 bg-white'> {'<'} </div>
+                className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl absolute left-4 sm:left-16 bg-white cursor-pointer'> {'<'} </div>
             <div className='flex gap-6 overflow-hidden' ref={trendRef} >
                 {trending.map((response,index) => 
                     <TrendCard 
@@ -77,7 +77,7 @@ export default function Page5() {
             </div>
             <div
                 onClick={rightScroll2} 
-                className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl  bg-white right-4 sm:right-16'> {'>'} </div>
+                className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl absolute bg-white right-4 sm:right-16 cursor-pointer'> {'>'} </div>
             
         </div>
     </div>
