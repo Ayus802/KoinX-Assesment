@@ -43,7 +43,7 @@ export default function Page5() {
             <div 
                 onClick={leftScroll1}
                 className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl absolute bg-white left-4 sm:left-16 cursor-pointer'> {'<'} </div>
-            <div className='flex gap-6 overflow-hidden' ref={likeRef} >
+            <div className='flex gap-6 overflow-scroll no-scrollbar' ref={likeRef} >
                 {trending.map((response,index) => 
                     <TrendCard 
                         key={index}
@@ -64,7 +64,7 @@ export default function Page5() {
             <div 
                 onClick={leftScroll2}
                 className='text-3xl h-10 min-w-10 text-center rounded-full shadow-xl absolute left-4 sm:left-16 bg-white cursor-pointer'> {'<'} </div>
-            <div className='flex gap-6 overflow-hidden' ref={trendRef} >
+            <div className='flex gap-6 overflow-scroll no-scrollbar' ref={trendRef} >
                 {trending.map((response,index) => 
                     <TrendCard 
                         key={index}
