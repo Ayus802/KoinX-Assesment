@@ -67,9 +67,9 @@ export default function Trends() {
                             Etherium
                         </div>  </div>
                 <div className={`flex items-center gap-2 font-semibold ${ethereum<0? 'text-red-700': 'text-green-600'}`}>
-                    <img 
+                <img 
                     className='h-3'
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Increase.svg/1027px-Increase.svg.png" alt="" />
+                    src={ethereum<0? "https://www.freeiconspng.com/uploads/red-triangle-png-20.png":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Increase.svg/1027px-Increase.svg.png"} alt="" />
                     <div>{ethereum.toFixed(2)}%</div></div>
             </div>
             <div className='flex justify-between'>
@@ -84,7 +84,7 @@ export default function Trends() {
                     
                 <img 
                     className='h-3'
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Increase.svg/1027px-Increase.svg.png" alt="" />
+                    src={bitcoin<0? "https://www.freeiconspng.com/uploads/red-triangle-png-20.png":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Increase.svg/1027px-Increase.svg.png"} alt="" />
                     <div>{bitcoin.toFixed(2)}%</div></div>
             </div>
             <div className='flex justify-between'>
@@ -98,7 +98,7 @@ export default function Trends() {
                 <div className={`flex gap-2 items-center font-semibold ${polygon<0? 'text-red-700': 'text-green-600'}`}>
                     <img 
                     className='h-3'
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Increase.svg/1027px-Increase.svg.png" alt="" />
+                    src={"https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Increase.svg/1027px-Increase.svg.png"} alt="" />
                     <div>1.24% </div></div>
             </div>
               
